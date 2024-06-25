@@ -13,3 +13,16 @@ export const registerUser = async (userData) => {
     }, 1000); // Simulate network delay
   });
 };
+
+export const createPost = async (postData) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const newPost = {
+        id: Date.now(),
+        ...postData,
+        createdAt: new Date().toISOString(),
+      };
+      resolve({ success: true, post: newPost });
+    }, 1000);
+  });
+};
