@@ -1,6 +1,6 @@
 import { Box, Heading, Text, VStack, Link as ChakraLink } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import CreatePostForm from "../components/CreatePostForm";
+import CreatePostForm from "../components/CreatePostForm.jsx";
 import { useState } from "react";
 
 const Forum = () => {
